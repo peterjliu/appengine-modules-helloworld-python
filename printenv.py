@@ -104,7 +104,8 @@ class MainHandler(webapp2.RequestHandler):
             html_for_modules_method('get_modules'),
             html_for_modules_method('get_versions'),
             html_for_modules_method('get_default_version'),
-            html_for_modules_method('get_num_instances'),
+            # This crashes when automatic scaling is enabled.
+            # html_for_modules_method('get_num_instances'),
             html_for_modules_method('get_hostname'),
         ]
 
